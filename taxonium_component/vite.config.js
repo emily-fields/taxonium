@@ -26,7 +26,7 @@ export default defineConfig({
     lib: {
       entry: "src/index.js",
       name: "Taxonium",
-      fileName: (format) => `taxonium-component.${format}.js`,
+      fileName: (format) => `taxonium-tree-viewer.${format}.js`,
       formats: ["es", "umd"], // Be explicit about formats
     },
     minify: true,

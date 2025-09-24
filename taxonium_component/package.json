@@ -1,6 +1,6 @@
 {
-  "name": "taxonium-component",
-  "version": "0.0.0",
+  "name": "taxonium-tree-viewer",
+  "version": "0.0.1",
   "description": "React component for exploring large phylogenetic trees in the browser",
   "keywords": [
     "phylogenetics",
@@ -13,13 +13,13 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/taxonium-component.es.js",
-      "require": "./dist/taxonium-component.umd.js"
+      "import": "./dist/taxonium-tree-viewer.es.js",
+      "require": "./dist/taxonium-tree-viewer.umd.js"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/theosanderson/taxonium",
+    "url": "https://github.com/emily-fields/taxonium",
     "directory": "taxonium-component"
   },
   "scripts": {
