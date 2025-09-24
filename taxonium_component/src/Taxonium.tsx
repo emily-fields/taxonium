@@ -216,7 +216,7 @@ function Taxonium({
 
   return (
     <GlobalErrorBoundary>
-      <div className="taxonium-component w-full h-full flex">
+      <div className="taxonium w-full h-full flex">
         <div id="taxonium-root" />
         <Toaster />
       <ReactTooltipAny
