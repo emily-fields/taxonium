@@ -3,18 +3,23 @@ import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
+  className?: string;
   isOpen?: boolean;
   onRequestClose?: () => void;
-  style?: any;
-  contentLabel?: string;
+  style?: {
+    content?: React.CSSProperties;
+    overlay?: React.CSSProperties;
+  };
   ariaHideApp?: boolean;
+  parentSelector?: () => HTMLElement;
+  contentLabel?: string;
   [key: string]: any;
 }
 
 export default function TaxoniumModal({
   children,
   parentSelector = () =>
-    document.getElementById("taxonium-root") || document.body,
+    document.getElementById("taxonium-root") as HTMLElement,
   ...props
 }: Props) {
   return (
