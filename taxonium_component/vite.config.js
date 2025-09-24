@@ -30,7 +30,7 @@ export default defineConfig({
       formats: ["es", "umd"], // Be explicit about formats
     },
     minify: true,
-    sourcemap: true,
+    sourcemap: false,
 
     rollupOptions: {
       // Make sure to externalize deps that shouldn't be bundled
