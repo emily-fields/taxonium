@@ -1,6 +1,6 @@
 {
-  "name": "taxonium-component",
-  "version": "0.0.0",
+  "name": "taxonium-tree-viewer",
+  "version": "0.0.1",
   "description": "React component for exploring large phylogenetic trees in the browser",
   "keywords": [
     "phylogenetics",
@@ -13,13 +13,13 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/taxonium-component.es.js",
-      "require": "./dist/taxonium-component.umd.js"
+      "import": "./dist/taxonium-tree-viewer.es.js",
+      "require": "./dist/taxonium-tree-viewer.umd.js"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/theosanderson/taxonium",
+    "url": "https://github.com/emily-fields/taxonium",
     "directory": "taxonium-component"
   },
   "scripts": {
@@ -33,8 +33,8 @@
   },
   "peerDependencies": {
     "prop-types": "^15.8.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
@@ -80,7 +80,7 @@
     "scale-color-perceptual": "^1.1.2",
     "storybook": "^8.6.12",
     "stream-json": "^1.9.1",
-    "tailwindcss": "^4.1.6",
+    "tailwindcss": "^4.1.13",
     "taxonium_data_handling": "file:../taxonium_data_handling",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",

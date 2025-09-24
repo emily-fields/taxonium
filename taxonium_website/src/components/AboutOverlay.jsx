@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Modal from "react-modal";
+import TaxoniumModal from "./TaxoniumModal";
 
 const modalStyle = {
   content: {
@@ -24,7 +24,7 @@ const modalStyle = {
 
 function AboutOverlay({ enabled, setEnabled, overlayContent }) {
   return (
-    <Modal
+    <TaxoniumModal
       isOpen={enabled}
       onRequestClose={() => setEnabled(false)}
       style={modalStyle}
@@ -76,7 +76,7 @@ function AboutOverlay({ enabled, setEnabled, overlayContent }) {
           </p>
         </div>
       )}
-    </Modal>
+    </TaxoniumModal>
   );
 }
 

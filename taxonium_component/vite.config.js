@@ -26,11 +26,11 @@ export default defineConfig({
     lib: {
       entry: "src/index.js",
       name: "Taxonium",
-      fileName: (format) => `taxonium-component.${format}.js`,
+      fileName: (format) => `taxonium-tree-viewer.${format}.js`,
       formats: ["es", "umd"], // Be explicit about formats
     },
     minify: true,
-    sourcemap: true,
+    sourcemap: false,
 
     rollupOptions: {
       // Make sure to externalize deps that shouldn't be bundled
